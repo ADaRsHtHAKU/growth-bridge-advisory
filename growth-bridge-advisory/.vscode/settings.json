@@ -1,0 +1,33 @@
+{
+  // Auto-format on save
+  "editor.formatOnSave": true,
+
+  // Default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Prettier settings
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+
+  // File associations
+  "files.associations": {
+    "*.html": "html",
+    "*.css":  "css",
+    "*.js":   "javascript"
+  },
+
+  // Live Server
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // Ruler at 100 chars
+  "editor.rulers": [100],
+
+  // Show file nesting for cleaner explorer
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "index.html": "*.html"
+  }
+}

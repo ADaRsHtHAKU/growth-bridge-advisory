@@ -1,0 +1,125 @@
+/* ============================================================
+   base.css  —  Reset, typography, shared utilities
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--text-dark);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+/* ── Section shells ─────────────────────────────── */
+section {
+  padding: 100px clamp(20px, 5vw, 80px);
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--navy);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.section-sub {
+  color: var(--gray-text);
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  max-width: 600px;
+  line-height: 1.75;
+}
+
+/* ── Buttons ────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 8px 30px rgba(0, 191, 165, 0.4);
+  transition: all var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0, 191, 165, 0.5);
+  background: linear-gradient(135deg, var(--teal-light) 0%, #00e5cc 100%);
+}
+
+.btn-ghost-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color var(--transition), gap var(--transition);
+}
+
+.btn-ghost-link:hover {
+  color: var(--white);
+  gap: 10px;
+}
+
+/* ── Footer ─────────────────────────────────────── */
+footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 40px clamp(20px, 5vw, 80px);
+  font-size: 0.85rem;
+}
+
+.footer-logo {
+  color: var(--white);
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.footer-logo span { color: var(--teal); }
+
+footer p { line-height: 1.7; }
+
+.footer-copy { margin-top: 10px; font-size: 0.78rem; }
+
+footer a {
+  color: var(--teal);
+  text-decoration: none;
+}

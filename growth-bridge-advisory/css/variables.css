@@ -1,0 +1,34 @@
+/* ============================================================
+   variables.css  —  Design tokens for Growth Bridge Advisory
+   ============================================================ */
+
+:root {
+  /* Brand colours */
+  --navy:        #0d1f3c;
+  --navy-mid:    #162847;
+  --navy-light:  #1e3a5f;
+  --teal:        #00bfa5;
+  --teal-light:  #00d4b8;
+  --teal-pale:   #e0f7f4;
+
+  /* Neutrals */
+  --white:       #ffffff;
+  --off-white:   #f7f9fc;
+  --gray-light:  #edf1f7;
+  --gray-mid:    #c8d4e3;
+  --gray-text:   #6b7f99;
+  --text-dark:   #0d1f3c;
+
+  /* Shadows */
+  --shadow-sm:   0 2px 12px rgba(13, 31, 60, 0.08);
+  --shadow-md:   0 8px 32px rgba(13, 31, 60, 0.12);
+  --shadow-lg:   0 20px 60px rgba(13, 31, 60, 0.18);
+
+  /* Shape */
+  --radius:      16px;
+  --radius-sm:   10px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --transition:  0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
